@@ -1,0 +1,12 @@
+OPTIONS sip:!!DST!!:5060 SIP/2.0
+Via: SIP/2.0/TCP !!SRC!!:5060
+From: <sip:!!SRC!!>
+To: <sip:!!DST!!>
+Date: !!TIME!!
+Call-ID: pingtest@!!SRC!!
+User-Agent: TestPingDD
+CSeq: 101 OPTIONS
+Contact: <sip:!!SRC!!:5060;transport=tcp>
+Max-Forwards: 0
+Content-Length: 0
+
